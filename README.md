@@ -1,5 +1,7 @@
 # P2PSC
 
+[![NPM Badge](https://img.shields.io/npm/v/p2psc.svg?style=for-the-badge)](https://npm.im/p2psc)
+
 *Point to point secure chat*
 
 ## About
