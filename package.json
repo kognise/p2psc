@@ -4,6 +4,7 @@
   "description": "Point to point secure chat",
   "scripts": {
     "dev": "nodemon",
+    "dev:docs": "live-server docs",
     "start": "node",
     "build": "pkg . --out-path dist"
   },
@@ -15,6 +16,7 @@
   "license": "UNLICENSED",
   "private": false,
   "devDependencies": {
+    "live-server": "^1.2.1",
     "nodemon": "^1.18.10",
     "pkg": "^4.3.7"
   },

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Nunito:400,700');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#header img {
+  width: 50px;
+}
+
+.banner {
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.jumbo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.info {
+  font-family: 'Nunito', sans-serif;
+  height: 100vh;
+  background: #111111;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.info p {
+  font-size: 1.4em;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.info > p {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.info.parallax {
+  background: url('https://raw.githubusercontent.com/arch-lord/p2psc/master/assets/galaxy.jpg') no-repeat center center fixed;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.info.lightish {
+  background: #dedede;
+  color: #000000;
+}
+
+.demo {
+  display: block;
+  width: 50%;
+  min-width: 575px;
+  margin: 0 auto;
+  background: black;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.demo pre {
+  margin: 0;
+  padding: 15px;
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-family: 'Consolas', monospace;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.grey {
+  color: #666666;
+}
+
+.cyan {
+  color: #00ffff;
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 0 50px;
+}
+
+a {
+  color: #04bcfc;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+.button {
+  display: block;
+  background: transparent;
+  border: 3px solid #333333;
+  color: #000000;
+  padding: 14px 20px;
+  margin: 0 auto;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  transition: background 150ms, color 150ms;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.button:hover, .button:focus {
+  background: #333333;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button.full {
+  width: 80%;
+}
+
+.installer {
+  border: 3px solid #333333;
+  background: #333333;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 0 auto;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    height: auto;
+    width: 100%;
+  }
+
+  .info p {
+    max-width: 90%;
+  }
+
+  .demo {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .columns {
+    display: block;
+  }
+  
+  .column {
+    margin-bottom: 50px;
+  }
+
+  .column:last-child {
+    margin-bottom: 0;
+  }
+}

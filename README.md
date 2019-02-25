@@ -1,4 +1,4 @@
-![P2PSC Logo](https://github.com/arch-lord/p2psc/blob/master/assets/logo-long.png)
+![P2PSC Logo](https://raw.githubusercontent.com/arch-lord/p2psc/master/assets/logo-long.png)
 
 [![NPM Badge](https://img.shields.io/npm/v/p2psc.svg?style=for-the-badge)](https://npm.im/p2psc)
 

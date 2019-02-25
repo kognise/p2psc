@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>P2PSC</title>
+  <link rel='stylesheet' href='/styles.css'>
+</head>
+<body>
+  <div id='header'>
+    <a href='#'>
+      <img src='https://raw.githubusercontent.com/arch-lord/p2psc/master/assets/logo-small.png' alt='Logo'>
+    </a>
+  </div>
+  
+  <section class='jumbo'>
+    <img class='banner' src='https://raw.githubusercontent.com/arch-lord/p2psc/master/assets/logo-long.png' alt='P2PSC'>
+    <h2 class='subtitle'>Point to point secure chat</h2>
+    <a href='#go' class='button'>Beam me up!</a>
+  </section>
+
+  <section class='info'>
+    <p>
+      P2PSC is a simple command-line chat application that's based on sockets and <strong>doesn't rely on a main server or backend</strong>.
+    </p>
+  </section>
+
+  <section class='info parallax'>
+    <div class='demo'>
+      <pre>$ p2psc
+<b>P2PSC</b> :: Point to point secure chat
+<span class='grey'>&gt;</span> Please enter your hostname: 127.0.0.1
+<span class='grey'>&gt;</span> Server is ready!
+<span class='grey'>&gt;</span> Tell your friends to run <span class='cyan'>/peer 127.0.0.1:19573</span> to chat with you
+<span class='grey'>&gt;&gt;</span> &block;</pre>
+    </div>
+  </section>
+
+  <section class='info'>
+    <div class='columns'>
+      <div class='column'>
+        <p>
+          <strong>Chats are created by "peering" with other users</strong>. They must give you an IP address and port to connect to, and then all messages will be sent over a socket.
+        </p>
+      </div>
+      <div class='column'>
+        <p>
+          By default <strong>nobody outside your local network</strong> can accesss your instance until you manually proxy remote connections with a service like <a href='https://ngrok.com/' target='_blank'>Ngrok</a>.
+        </p>
+      </div>
+      <div class='column'>
+        <p>
+          P2PSC is split into a server and client. The client <strong>manages connections to peers</strong> and the server is <strong>what gets connected to</strong> by other clients.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class='info lightish' id='go'>
+    <div class='columns'>
+      <div class='column'>
+        <h1>Node</h1>
+        <div class='installer'>yarn global add p2psc</div>
+        <div class='installer'>npm install -g p2psc</div>
+      </div>
+      <div class='column'>
+        <h1>Standalone</h1>
+        <a href='https://github.com/arch-lord/p2psc/raw/master/dist/p2psc-win.exe' class='button full'>Windows</a>
+        <a href='https://github.com/arch-lord/p2psc/raw/master/dist/p2psc-maxos' class='button full'>macOS</a>
+        <a href='https://github.com/arch-lord/p2psc/raw/master/dist/p2psc-linux' class='button full'>Linux</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
