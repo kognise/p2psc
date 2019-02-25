@@ -23,5 +23,13 @@
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0",
     "wait-for-user-input": "^1.0.0"
-  }
+  },
+  "keywords": [
+    "p2psc",
+    "p2p",
+    "point-to-point",
+    "chat",
+    "security",
+    "secure"
+  ]
 }
