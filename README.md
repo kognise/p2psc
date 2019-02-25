@@ -1,8 +1,10 @@
-![P2PSC Logo](https://raw.githubusercontent.com/arch-lord/p2psc/master/assets/logo-long.png)
+[![P2PSC Logo](https://raw.githubusercontent.com/arch-lord/p2psc/master/assets/logo-long.png)](https://p2psc.js.org/)
 
 [![NPM Badge](https://img.shields.io/npm/v/p2psc.svg?style=for-the-badge)](https://npm.im/p2psc)
 
 *Point to point secure chat*
+
+**It's better on our website!** We recommend going to [our website](https://p2psc.js.org/) instead of reading the below content. It's meant to be clearer and also looks better.
 
 ## About
 

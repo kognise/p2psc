@@ -13,3 +13,4 @@ function checkPositionAndUpdate() {
 
 window.addEventListener('scroll', checkPositionAndUpdate, { passive: true })
 window.addEventListener('resize', checkPositionAndUpdate)
+checkPositionAndUpdate()
