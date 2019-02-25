@@ -25,11 +25,25 @@ function print(message) {
   }
 }
 
-module.exports = async () => {
+module.exports = async (args) => {
   print(`${chalk.bold('P2PSC')} :: Point to Point Secure Chat`)
-  const thisHost = await askForInput(`${chalk.grey('>')} Please enter your hostname:`)
-  const thisPort = Math.floor(Math.random() * 25566)
 
-  client(askForInput, print, thisHost, thisPort)
-  server(print, client.peer, thisHost, thisPort)
+  let thisPort
+  let displayPort
+  if (args[0] === 'ngrok' && args[1]) {
+    thisPort = parseInt(args[1])
+    displayPort = 80
+    print(`${chalk.grey('>')} Ngrok mode: run ${chalk.cyan(`ngrok http ${thisPort}`)} before proceeding`)
+  } else if (args[0]) {
+    thisPort = parseInt(args[0])
+    displayPort = thisPort
+  } else {
+    thisPort = Math.floor(Math.random() * 25566)
+    displayPort = thisPort
+  }
+
+  const thisHost = await askForInput(`${chalk.grey('>')} Please enter your hostname:`)
+
+  client(askForInput, print, thisHost, displayPort)
+  server(print, client.peer, thisHost, thisPort, displayPort)
 }

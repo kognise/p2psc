@@ -1,7 +1,7 @@
 const io = require('socket.io')()
 const chalk = require('chalk')
 
-module.exports = (print, peer, thisHost, thisPort) => {
+module.exports = (print, peer, thisHost, thisPort, displayPort) => {
   io.on('connection', (socket) => {
     socket.on('peer', ({ host, port, peerBack }) => {
       if (!peerBack) {
@@ -17,5 +17,5 @@ module.exports = (print, peer, thisHost, thisPort) => {
 
   io.listen(thisPort)
   print(`${chalk.grey('>')} Server is ready!`)
-  print(`${chalk.grey('>')} Tell your friends to run ${chalk.cyan(`/peer ${thisHost}:${thisPort}`)} to chat with you`)
+  print(`${chalk.grey('>')} Tell your friends to run ${chalk.cyan(`/peer ${thisHost}:${displayPort}`)} to chat with you`)
 }

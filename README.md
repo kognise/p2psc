@@ -28,3 +28,17 @@ If you want to download a compiled executable which could be useful if you're go
 Just run `p2psc` and enter your hostname to start P2PSC. This hostname is what others will be able to use to connect to you.
 
 To peer with someone else, just send `/peer HOST:PORT` in chat.
+
+## FAQs
+
+**Does it support group chats?**  
+Yep! Just peer to multiple people and it'll work fine.
+
+**How secure *is* it?**  
+Well, nothing is encrypted. But by default it's only exposed to people on your local network and other people need both your IP and the port P2PSC is running on.
+
+**Can I use it with Ngrok to chat with other people across the web?**  
+Why, yes! Just run P2PSC like this instead `p2psc ngrok SOME_PORT`, and then run `ngrok http SOME_PORT`. Then, in P2PSC when it asks for a host enter the url Ngrok gave you (without the `https://`).
+
+**How does P2PSC choose ports? Can I choose my own?**  
+P2PSC currently will just choose a random port. And yes, you *can* choose your own! Just run `p2psc SOME_PORT`.
