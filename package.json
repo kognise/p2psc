@@ -14,7 +14,7 @@
     "p2psc": "./p2psc.js"
   },
   "author": "Felix Mattick",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": false,
   "devDependencies": {
     "live-server": "^1.2.1",
@@ -32,6 +32,7 @@
     "p2psc",
     "p2p",
     "point-to-point",
+    "decentralized",
     "chat",
     "security",
     "secure"
@@ -39,5 +40,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/arch-lord/p2psc.git"
+  },
+  "homepage": "https://p2psc.js.org/",
+  "bugs": {
+    "url": "https://github.com/arch-lord/p2psc/issues"
   }
 }
