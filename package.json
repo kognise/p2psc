@@ -31,5 +31,9 @@
     "chat",
     "security",
     "secure"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arch-lord/p2psc.git"
+  }
 }
