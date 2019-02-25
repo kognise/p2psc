@@ -14,10 +14,37 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
 }
 
-#header img {
-  width: 50px;
+#logo {
+  display: block;
+  flex: 1;
+}
+
+#logo img {
+  height: 50px;
+}
+
+#quick-start {
+  color: #323232;
+  font-family: 'Nunito', sans-serif;
+  transition: color 150ms;
+}
+
+#quick-start:hover, #quick-start:focus {
+  color: #000000;
+  text-decoration: none;
+}
+
+#quick-start.light {
+  color: #dddddd;
+}
+
+#quick-start.light:hover, #quick-start.light:focus {
+  color: #ffffff;
 }
 
 .banner {
@@ -57,6 +84,18 @@ body {
   font-size: 1.4em;
   margin: 0;
   line-height: 1.6;
+}
+
+.info ul, .info ol {
+  font-size: 1.1em;
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+}
+
+.info li {
+  font-size: 1.1em;
+  margin-bottom: 6px;
 }
 
 .info > p {
@@ -113,6 +152,10 @@ body {
   padding: 0 50px;
 }
 
+.column.left {
+  text-align: left;
+}
+
 a {
   color: #04bcfc;
   text-decoration: none;
@@ -161,6 +204,14 @@ a:hover, a:focus {
   margin-bottom: 12px;
   width: 80%;
   box-sizing: border-box;
+}
+
+.mb {
+  margin-bottom: 15px !important;
+}
+
+.smb {
+  margin-bottom: 12px !important;
 }
 
 @media only screen and (max-width: 600px) {

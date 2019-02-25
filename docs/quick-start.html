@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>P2PSC</title>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+  <div id='header'>
+    <a href='/' id='logo'>
+      <img src='https://raw.githubusercontent.com/arch-lord/p2psc/master/assets/logo-small.png' alt='Go Home'>
+    </a>
+  </div>
+
+  <section class='info'>
+    <p class='mb'>
+      Get a friend to do the following steps with you. If you don't have any, you can just do it yourself with two different ports.
+    </p>
+    <div class='columns'>
+      <div class='column left'>
+        <h1 class='smb'>Both of you</h1>
+        <ol>
+          <li>First, <a href='./#go' target='_blank'>install P2PSC</a>.</li>
+          <li>Also make sure to <a href='https://ngrok.com/download' target='_blank'>install Ngrok</a> and set it up.</li>
+          <li>Run <code>p2psc ngrok 1337</code>.</li>
+          <li>In another terminal, run <code>ngrok http 1337</code>.</li>
+          <li>Ngrok should display a bunch of urls on the screen. Find the one that looks something like <code>https://fc4ecb14.ngrok.io</code>.</li>
+          <li>Enter that url into P2PSC when it asks for a hostname.</li>
+        </ol>
+      </div>
+      <div class='column left'>
+        <h1 class='smb'>One of you</h1>
+        <ol>
+          <li>Get the other's peer string; it should look something like <code>/peer fc4ecb14.ngrok.io:80</code>.</li>
+          <li>Paste it into your chat, and you should now be able to chat with one another!</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class='info lightish'>
+    <h1>Why does Ngrok have to be used?</h1>
+    <p class='mb'>
+      By default, P2PSC is only exposed to members of your local network, 99% of the time this means only people connected to the same WiFi network as you. Ngrok is a service that can let people elsewhere to connect to P2PSC.
+    </p>
+    <a href='./' class='button'>
+      Go back home
+    </a>
+  </section>
+</body>
+</html>
