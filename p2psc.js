@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-require('./screen')(process.argv.splice(2))
+require('./screen')(process.argv.slice(2))
