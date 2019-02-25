@@ -16,6 +16,6 @@ module.exports = (print, peer, thisHost, thisPort, displayPort) => {
   })
 
   io.listen(thisPort)
-  print(`${chalk.grey('>')} Server is ready!`)
+  print(`${chalk.grey('>')} Server is ready`)
   print(`${chalk.grey('>')} Tell your friends to run ${chalk.cyan(`/peer ${thisHost}:${displayPort}`)} to chat with you`)
 }
