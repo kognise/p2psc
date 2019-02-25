@@ -27,7 +27,7 @@ function print(message) {
 }
 
 module.exports = async (args) => {
-  print(`${chalk.bold('P2PSC')} :: Point to Point Secure Chat`)
+  print(`${chalk.bold('P2PSC')} :: Point to point secure chat`)
 
   let thisPort
   let displayPort
