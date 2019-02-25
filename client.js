@@ -5,7 +5,6 @@ const sockets = []
 
 function peer(host, port, thisHost, thisPort, peerBack) {
   return new Promise((resolve) => {
-    console.log(host, port, peerBack)
     const socket = io(`http://${host}:${port}`) 
     socket.on('connect', () => {
       socket.emit('peer', {

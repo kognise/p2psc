@@ -27,7 +27,7 @@ function print(message) {
 
 module.exports = async () => {
   print(`${chalk.bold('P2PSC')} :: Point to Point Secure Chat`)
-  const thisHost = await askForInput('> Please enter your hostname:')
+  const thisHost = await askForInput(`${chalk.grey('>')} Please enter your hostname:`)
   const thisPort = Math.floor(Math.random() * 25566)
 
   client(askForInput, print, thisHost, thisPort)
