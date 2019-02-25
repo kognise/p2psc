@@ -1,6 +1,7 @@
 [![P2PSC Logo](https://raw.githubusercontent.com/arch-lord/p2psc/master/assets/logo-long.png)](https://p2psc.js.org/)
 
 [![NPM Badge](https://img.shields.io/npm/v/p2psc.svg?style=for-the-badge)](https://npm.im/p2psc)
+[![MIT License](https://img.shields.io/github/license/arch-lord/p2psc.svg?logo=license&style=for-the-badge)](https://github.com/arch-lord/p2psc/blob/master/LICENSE.md)
 
 *Point to point secure chat*
 
