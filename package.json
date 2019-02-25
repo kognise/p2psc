@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "nodemon",
     "dev:docs": "live-server docs",
+    "lint:docs": "htmllint docs/**.html",
     "start": "node",
     "build": "pkg . --out-path dist"
   },
