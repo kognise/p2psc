@@ -1,15 +1,13 @@
-const quickStart = document.getElementById('quick-start')
-
-const sections = [ false, true, true, true, false ]
+const links = Array.prototype.slice.call(document.getElementsByClassName('header-link'))
 
 function checkPositionAndUpdate() {
   const scrolled = window.scrollY
   const height = window.innerHeight
   const section = sections[Math.floor(scrolled / height)]
   if (section) {
-    quickStart.className = 'light'
+    links.forEach((link) => link.className = 'header-link light')
   } else {
-    quickStart.className = ''
+    links.forEach((link) => link.className = 'header-link')
   }
 }
 

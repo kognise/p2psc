@@ -28,18 +28,19 @@ body {
   height: 50px;
 }
 
-#quick-start {
+.header-link {
   color: #323232;
   font-family: 'Nunito', sans-serif;
   transition: color 150ms;
+  margin-right: 12px;
 }
 
-#quick-start:hover, #quick-start:focus {
+.header-link:hover, .header-link:focus {
   color: #000000;
   text-decoration: none;
 }
 
-#quick-start.light {
+.header-link.light {
   color: #dddddd;
 }
 
