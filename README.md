@@ -10,6 +10,23 @@ P2PSC is a simple command-line chat application that's based on sockets, and mos
 
 Chats are created by "peering" with other users. They must give you an IP address and port to connect to, and then all messages will be sent over a socket.
 
+## Quick Start
+
+A guide to quickly creating a chat between two people not on the same network.
+
+Both of you:
+
+- Install P2PSC with `yarn global add p2psc` or `npm install -g p2psc`
+- Download and set up [Ngrok](https://ngrok.com/download)
+- Run `p2psc ngrok 1337`
+- Run `ngrok http 1337` in a seperate terminal
+- Enter the url (without the `https://`) that Ngrok gave you into P2PSC
+
+One of you:
+
+- Get the others peer string; it should look something like `/peer a5506f69.ngrok.io:80`
+- Send it in chat
+
 ## Installation
 
 To download P2PSC the normal way from Node, just run one of the below commands depending on your preferred package manager.
