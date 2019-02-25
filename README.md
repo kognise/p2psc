@@ -20,11 +20,11 @@ Both of you:
 - Download and set up [Ngrok](https://ngrok.com/download)
 - Run `p2psc ngrok 1337`
 - Run `ngrok http 1337` in a seperate terminal
-- Enter the url (without the `https://`) that Ngrok gave you into P2PSC
+- Enter the url that Ngrok gave you (without the `https://`) into P2PSC
 
 One of you:
 
-- Get the others peer string; it should look something like `/peer a5506f69.ngrok.io:80`
+- Get the other's peer string; it should look something like `/peer a5506f69.ngrok.io:80`
 - Send it in chat
 
 ## Installation
