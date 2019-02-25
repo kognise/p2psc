@@ -52,7 +52,7 @@ To peer with someone else, just send `/peer HOST:PORT` in chat.
 Yep! Just peer to multiple people and it'll work fine.
 
 **How secure *is* it?**  
-Well, nothing is encrypted. But by default it's only exposed to people on your local network and other people need both your IP and the port P2PSC is running on. To expose it to the public you'd need a service such as Ngrok, see the next question.
+Well, nothing is encrypted. But by default, it's only exposed to people on your local network and other people need both your IP and the port P2PSC is running on. To expose it to the public you'd need a service such as Ngrok, see the next question.
 
 **Can I use it with Ngrok to chat with other people across the web?**  
 Why, yes! Just run P2PSC like this instead `p2psc ngrok SOME_PORT`, and then run `ngrok http SOME_PORT`. Then, in P2PSC when it asks for a host enter the url Ngrok gave you (without the `https://`).

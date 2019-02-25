@@ -216,7 +216,7 @@ a:hover, a:focus {
 }
 
 @media only screen and (max-width: 600px) {
-  .banner {
+  .logo-big {
     height: auto;
     width: 100%;
   }
