@@ -1,0 +1,27 @@
+{
+  "name": "p2psc",
+  "version": "0.0.1",
+  "description": "Point to point secure chat",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node",
+    "build": "pkg . --out-path dist"
+  },
+  "main": "p2psc.js",
+  "bin": {
+    "p2psc": "./p2psc.js"
+  },
+  "author": "Felix Mattick",
+  "license": "UNLICENSED",
+  "private": false,
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "pkg": "^4.3.7"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "wait-for-user-input": "^1.0.0"
+  }
+}
