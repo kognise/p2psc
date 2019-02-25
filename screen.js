@@ -1,6 +1,7 @@
 const getInput = require('wait-for-user-input')
 const readline = require('readline')
 const chalk = require('chalk')
+const portFinder = require('portfinder')
 
 const client = require('./client')
 const server = require('./server')
@@ -38,7 +39,7 @@ module.exports = async (args) => {
     thisPort = parseInt(args[0])
     displayPort = thisPort
   } else {
-    thisPort = Math.floor(Math.random() * 25566)
+    thisPort = await portFinder.getPortPromise()
     displayPort = thisPort
   }
 
