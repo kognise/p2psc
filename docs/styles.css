@@ -110,7 +110,7 @@ body {
 }
 
 .info.parallax {
-  background: url('https://raw.githubusercontent.com/arch-lord/p2psc/master/assets/galaxy.jpg') no-repeat center center fixed;
+  background: url('https://raw.githubusercontent.com/kognise/p2psc/master/assets/galaxy.jpg') no-repeat center center fixed;
   background-attachment: fixed;
   background-size: cover;
 }
