@@ -39,9 +39,9 @@ To download P2PSC the normal way from Node, just run one of the below commands d
 
 If you want to download a compiled executable which could be useful if you're going to a summer camp and want to give others copies of the app to chat with one another across campus under the nose of the faculty and staff *(seems oddly specific, doesn't it?)*, you can download it for various platforms from one of the below links:
 
-- [Windows](https://github.com/arch-lord/p2psc/raw/master/dist/p2psc-win.exe)
-- [macOS](https://github.com/arch-lord/p2psc/raw/master/dist/p2psc-macos)
-- [Linux](https://github.com/arch-lord/p2psc/raw/master/dist/p2psc-linux)
+- [Windows](https://github.com/kognise/p2psc/raw/master/dist/p2psc-win.exe)
+- [macOS](https://github.com/kognise/p2psc/raw/master/dist/p2psc-macos)
+- [Linux](https://github.com/kognise/p2psc/raw/master/dist/p2psc-linux)
 
 ## Usage
 
