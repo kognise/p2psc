@@ -1,6 +1,6 @@
 {
   "name": "p2psc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Point to point secure chat",
   "scripts": {
     "dev": "nodemon",
