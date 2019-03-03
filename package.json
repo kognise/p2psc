@@ -13,7 +13,7 @@
   "bin": {
     "p2psc": "./p2psc.js"
   },
-  "author": "Felix Mattick",
+  "author": "Kognise",
   "license": "MIT",
   "private": false,
   "devDependencies": {
@@ -39,10 +39,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/arch-lord/p2psc.git"
+    "url": "https://github.com/kognise/p2psc.git"
   },
   "homepage": "https://p2psc.js.org/",
   "bugs": {
-    "url": "https://github.com/arch-lord/p2psc/issues"
+    "url": "https://github.com/kognise/p2psc/issues"
   }
 }
