@@ -1,3 +1,7 @@
+> 🚩 **This project is archived!** 🚩
+> 
+> *This was never that great of an idea for a project, and has been superseded by [Crypticat](https://github.com/kognise/crypticat).*
+
 [![P2PSC Logo](https://raw.githubusercontent.com/arch-lord/p2psc/master/assets/logo-long.png)](https://p2psc.js.org/)
 
 [![NPM Badge](https://img.shields.io/npm/v/p2psc.svg?style=for-the-badge)](https://npm.im/p2psc)
